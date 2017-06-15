@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+
+100.times do
+  StarWarsFact.create(character: Faker::StarWars.character,
+                      droid: Faker::StarWars.droid,
+                      planet: Faker::StarWars.planet,
+                      quote: Faker::StarWars.quote,
+                      vehicle: Faker::StarWars.vehicle)
+end

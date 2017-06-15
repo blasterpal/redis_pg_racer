@@ -1,0 +1,2 @@
+class StarWarsFact < ApplicationRecord
+end
